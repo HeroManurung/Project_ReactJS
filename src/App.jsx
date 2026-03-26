@@ -1,12 +1,18 @@
 import React from 'react';
-import HeroProfile from './HeroProfile'; // Langkah 1
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HeroProfile from './HeroProfile';
 
 function App() {
   return (
-    <div className="App">
-      {/* Langkah 2: Masukkan komponen profilmu */}
-      <HeroProfile />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element={<p>Ini halaman utama kelompok. Buka /hero-manurung untuk lihat profilku.</p>} />
+
+        
+        <Route path="/hero-manurung" element={<HeroProfile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

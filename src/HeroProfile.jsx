@@ -149,8 +149,13 @@ function HeroProfile() {
                 <a href="#" className="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-3.5 px-8 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
                     <i class="fa-solid fa-download text-lg"></i> Download CV
                 </a>
-                <a href="#" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-bold py-3.5 px-8 rounded-xl border-2 border-gray-900 transition duration-300 hover:shadow-md hover:-translate-y-1">
-                    <i class="fa-solid fa-paper-plane text-lg"></i> Contact Me
+               <a 
+                href="https://wa.me/6285831264801" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="border-2 border-gray-900 text-gray-900 font-bold py-2 px-6 rounded-lg hover:bg-gray-100 flex items-center transition duration-300"
+>
+                <i className="fas fa-paper-plane mr-2"></i> Contact Me
                 </a>
             </div>
             </div> 
