@@ -1,45 +1,44 @@
+import foto from '../assets/rian.jpeg'
 function Rian() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-10 px-4">
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className="min-h-screen bg-[#0f172a] py-10 px-4 font-sans">
+      <div className="max-w-2xl mx-auto">
         
-        {/* Header / Banner */}
-        <div className="bg-indigo-600 h-32"></div>
+        {/* Card */}
+        <div className="bg-[#0f172a] rounded-2xl p-8 border-t-4 border-[#38bdf8]">
+          
+          {/* Header */}
+          <div className="flex justify-between items-center mb-6">
+            <div>
+              <h1 className="text-[#f1f5f9] text-2xl font-medium mb-1">Hilmi Yusrian Naja</h1>
+              <p className="text-[#38bdf8] text-sm">Teknologi Informasi — Universitas Brawijaya</p>
+            </div>
+            <img src={foto} alt="Foto Hilmi" className="w-16 h-16 rounded-xl object-cover" />
+          </div>
 
-        {/* Foto Profil */}
-        <div className="flex justify-center -mt-16 px-6">
-          <img
-            src="https://ui-avatars.com/api/?name=Rian&size=128&background=6366f1&color=fff"
-            alt="Foto Rian"
-            className="w-32 h-32 rounded-full border-4 border-white shadow-lg"
-          />
+          {/* Badges */}
+          <div className="flex gap-3 mb-6 flex-wrap">
+            <span className="bg-[#1e3a5f] text-[#38bdf8] text-xs px-4 py-1 rounded-full">Kelas T2C</span>
+            <span className="bg-[#1e3a5f] text-[#38bdf8] text-xs px-4 py-1 rounded-full">📍 Malang, Jawa Timur</span>
+          </div>
+
+          {/* Tentang Diri */}
+          <div className="bg-[#1e293b] rounded-xl p-5">
+            <h2 className="text-[#f1f5f9] text-sm font-medium mb-3">Tentang Diri</h2>
+            <p className="text-[#94a3b8] text-sm leading-relaxed">
+              Halo! Nama saya Hilmi Yusrian Naja, seorang profesional dengan pengalaman 
+              di bidang TI. Saya memiliki berbagai keterampilan baik soft skill maupun 
+              hard skill yang mendukung karir saya. Saya memiliki hobi mendaki gunung dan 
+              aktivitas ini mengajarkan saya arti ketekunan, kerja sama tim, dan manajemen 
+              dalam kondisi yang tidak selalu mudah. Gunung yang pernah saya taklukan antara 
+              lain Gunung Buthak, Penanggungan, Kelud, Kawi, Arjuno, Panderman, dan Bokong. 
+              Pengalaman yang paling berkesan adalah saat mendaki Gunung Arjuno, di mana 
+              medan terjal penuh batu harus saya lewati. Namun ketika sampai di puncak dan 
+              melihat pemandangan di atas awan, semua rasa lelah terbayar lunas.
+            </p>
+          </div>
+
         </div>
-
-        {/* Info */}
-        <div className="text-center px-6 pt-4">
-          <h1 className="text-2xl font-bold text-gray-800">Rian</h1>
-          <p className="text-indigo-500 font-medium">Kelas A</p>
-          <p className="text-gray-500 text-sm">Teknik Informatika</p>
-          <p className="text-gray-400 text-sm">📍 Malang, Jawa Timur</p>
-        </div>
-
-        {/* Tentang Diri */}
-        <div className="px-8 py-6">
-          <h2 className="text-lg font-semibold text-indigo-600 mb-2">Tentang Diri</h2>
-          <p className="text-gray-600 leading-relaxed text-sm">
-            Halo! Nama saya Rian, seorang mahasiswa yang sedang menempuh pendidikan 
-            di jurusan Teknik Informatika. Saya memiliki ketertarikan yang besar 
-            terhadap dunia teknologi, khususnya dalam pengembangan aplikasi web dan 
-            mobile. Saya percaya bahwa teknologi adalah alat yang luar biasa untuk 
-            memecahkan masalah nyata di masyarakat. Dalam keseharian saya, saya 
-            senang belajar hal-hal baru, berkolaborasi dengan teman-teman, dan 
-            mengerjakan proyek yang bermakna. Saya juga aktif mengikuti berbagai 
-            kegiatan kampus untuk mengembangkan soft skill dan memperluas jaringan. 
-            Ke depannya, saya berharap bisa berkontribusi dalam dunia teknologi 
-            Indonesia dan menciptakan solusi inovatif yang bermanfaat bagi banyak orang.
-          </p>
-        </div>
-
       </div>
     </div>
   )
