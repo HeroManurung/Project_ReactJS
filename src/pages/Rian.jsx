@@ -4,68 +4,63 @@ import mt2 from '../assets/mt2.jpg'
 import mt3 from '../assets/mt3.jpg'
 import mt4 from '../assets/mt4.jpg'
 import mt5 from '../assets/mt5.jpg'
-import mt6 from '../assets/mt6.jpg'
-import mt7 from '../assets/mt7.jpg'
 
 function Rian() {
   return (
-    <div className="min-h-screen bg-[#1a1a2a] p-8 font-sans">
+    <div className="min-h-screen bg-[#1a1a2a] p-4 md:p-8 font-sans">
       <div className="max-w-5xl mx-auto flex flex-col gap-6">
 
-        {/* Hero Section */}
-        <div className="grid gap-8" style={{gridTemplateColumns: '320px 1fr'}}>
-          <div className="bg-[#111122] rounded-xl overflow-hidden" style={{height: '380px'}}>
-            <img src={foto} alt="Foto Hilmi" className="w-full h-full object-cover" />
+        <div className="flex flex-col md:grid md:gap-8" style={{gridTemplateColumns: '320px 1fr'}}>
+          <div className="bg-[#111122] rounded-xl overflow-hidden w-full" style={{height: '400px'}}>
+            <img src={foto} alt="Foto Rian" className="w-full h-full object-cover object-top" />
           </div>
-          <div>
-            <h1 className="text-[#e8f0fe] font-bold leading-none" style={{fontSize: '80px'}}>
+          <div className="mt-4 md:mt-0">
+            <h1 className="text-[#e8f0fe] font-bold leading-none text-5xl md:text-7xl">
               HELLO<span className="text-[#4a90d9]">!</span>
             </h1>
-            <p className="text-[#8899aa] text-sm leading-relaxed mt-4 mb-5">
-              Nama saya <strong className="text-[#e8f0fe]">Hilmi Yusrian Naja</strong>, mahasiswa Teknologi Informasi 
+            <p className="text-[#8899aa] text-sm leading-relaxed mt-4 mb-5" style={{textAlign: 'justify'}}>
+              Nama saya <strong className="text-[#e8f0fe]">Hilmi Yusrian Naja</strong>, mahasiswa Fakultas Vokasi dengan program Studi Teknologi Informasi 
               di Universitas Brawijaya angkatan 2025. Saya berdomisili di Malang, Jawa Timur dan saat ini berusia 
               19 tahun. Saya adalah pribadi yang aktif, disiplin, dan memiliki semangat belajar yang tinggi. 
               Saya percaya bahwa ketekunan dan kerja keras adalah kunci untuk mencapai tujuan. Selain di bidang 
               akademik, saya juga aktif di organisasi dan kegiatan ekstrakurikuler. Saya memiliki hobi mendaki 
               gunung, badminton, dan lari yang mengajarkan saya nilai ketekunan dan kerja sama tim.
             </p>
-            <div className="grid grid-cols-2 gap-2" style={{maxWidth: '480px'}}>
+            <div className="grid grid-cols-2 gap-2">
               <a href="https://instagram.com/hilmiyusrian_" target="_blank"
-                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline">
+                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline text-left">
                 📸 @hilmiyusrian_
               </a>
               <a href="mailto:hilmoyusrian@gmail.com"
-                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline">
+                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline text-left">
                 ✉️ hilmoyusrian@gmail.com
               </a>
               <a href="https://github.com/hilmiyusriann" target="_blank"
-                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline">
+                className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] no-underline text-left">
                 💻 github.com/hilmiyusriann
               </a>
-              <span className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b]">
+              <span className="bg-[#0d2a4a] text-[#7eb8f7] text-xs px-4 py-2 rounded-full border border-[#1a3a6b] text-left">
                 📍 Malang, Jawa Timur
               </span>
             </div>
           </div>
         </div>
 
-        {/* Section Baris 1 */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-          {/* Pendidikan */}
           <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
             <h2 className="text-[#e8f0fe] text-base font-medium mb-4">Pendidikan</h2>
             <div className="flex flex-col gap-3">
               <div className="border-l-2 border-[#4a90d9] pl-3">
-                <p className="text-[#8899aa] text-xs mb-1">Tahun - Tahun</p>
+                <p className="text-[#8899aa] text-xs mb-1">2012 - 2019</p>
                 <p className="text-[#e8f0fe] text-sm font-medium">MI Raudlatul Mubtadiin</p>
               </div>
               <div className="border-l-2 border-[#4a90d9] pl-3">
-                <p className="text-[#8899aa] text-xs mb-1">Tahun - Tahun</p>
+                <p className="text-[#8899aa] text-xs mb-1">2019 - 2022</p>
                 <p className="text-[#e8f0fe] text-sm font-medium">MtsN 2 Malang</p>
               </div>
               <div className="border-l-2 border-[#4a90d9] pl-3">
-                <p className="text-[#8899aa] text-xs mb-1">Tahun - Tahun</p>
+                <p className="text-[#8899aa] text-xs mb-1">2022 - 2025</p>
                 <p className="text-[#e8f0fe] text-sm font-medium">MAN 1 Malang</p>
               </div>
               <div className="border-l-2 border-[#4a90d9] pl-3">
@@ -76,7 +71,6 @@ function Rian() {
             </div>
           </div>
 
-          {/* Hobi + Bahasa */}
           <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
             <h2 className="text-[#e8f0fe] text-base font-medium mb-4">Hobi</h2>
             <div className="flex flex-col gap-2 mb-5">
@@ -106,7 +100,6 @@ function Rian() {
             </div>
           </div>
 
-          {/* Kontak */}
           <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
             <h2 className="text-[#e8f0fe] text-base font-medium mb-4">Kontak</h2>
             <div className="flex flex-col gap-3">
@@ -129,10 +122,8 @@ function Rian() {
           </div>
         </div>
 
-        {/* Section Baris 2 */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-          {/* Organisasi */}
           <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
             <h2 className="text-[#e8f0fe] text-base font-medium mb-4">Pengalaman Organisasi</h2>
             <div className="flex gap-4 items-start">
@@ -143,7 +134,7 @@ function Rian() {
                 <p className="text-[#e8f0fe] text-sm font-medium mb-1">KOMPAS — Komunitas Paskibra</p>
                 <p className="text-[#4a90d9] text-xs mb-1">Koordinator Divisi Infokom (PDD)</p>
                 <p className="text-[#8899aa] text-xs mb-2">MAN 1 Malang • Kelas 10 - 11 (2 Tahun)</p>
-                <p className="text-[#8899aa] text-xs leading-relaxed">
+                <p className="text-[#8899aa] text-xs leading-relaxed" style={{textAlign: 'justify'}}>
                   Bertanggung jawab atas dokumentasi dan publikasi kegiatan organisasi. 
                   Mengelola konten informasi dan komunikasi antar anggota serta publik.
                 </p>
@@ -151,7 +142,6 @@ function Rian() {
             </div>
           </div>
 
-          {/* Prestasi */}
           <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
             <h2 className="text-[#e8f0fe] text-base font-medium mb-4">Prestasi</h2>
             <div className="flex gap-4 items-start">
@@ -162,7 +152,7 @@ function Rian() {
               <div>
                 <p className="text-[#e8f0fe] text-sm font-medium mb-1">OSN-K Kebumian</p>
                 <p className="text-[#4a90d9] text-xs mb-1">Olimpiade Sains Nasional Kabupaten/Kota</p>
-                <p className="text-[#8899aa] text-xs leading-relaxed">
+                <p className="text-[#8899aa] text-xs leading-relaxed" style={{textAlign: 'justify'}}>
                   Meraih Juara 3 pada kompetisi Olimpiade Sains Nasional tingkat 
                   Kabupaten/Kota bidang Kebumian. Kompetisi ini menguji pengetahuan 
                   dan kemampuan analisis di bidang ilmu kebumian.
@@ -172,20 +162,23 @@ function Rian() {
           </div>
         </div>
 
-        {/* Galeri Pendakian */}
         <div className="bg-[#111122] rounded-xl p-5 border border-[#1a3a6b]">
           <h2 className="text-[#e8f0fe] text-base font-medium mb-4">📸 Galeri Pendakian</h2>
-          <div className="scroll-wrapper">
-            <div className="auto-scroll">
-              {[mt1,mt2,mt3,mt4,mt5,mt6,mt7,mt1,mt2,mt3,mt4,mt5,mt6,mt7].map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={`gunung-${i}`}
-                  style={{height:'300px', width:'240px', objectFit:'cover', borderRadius:'10px', flexShrink:0}}
-                />
-              ))}
+          <div className="flex flex-col md:grid md:gap-2" style={{gridTemplateColumns: '1fr 1fr'}}>
+
+            <img
+              src={mt1}
+              alt="gunung-1"
+              className="rounded-xl object-cover w-full mb-2 md:mb-0"
+              style={{height: '600px'}}
+            />
+            <div className="grid grid-cols-2 gap-2">
+              <img src={mt2} alt="gunung-2" className="rounded-xl object-cover w-full" style={{height:'300px'}} />
+              <img src={mt3} alt="gunung-3" className="rounded-xl object-cover w-full" style={{height:'300px'}} />
+              <img src={mt4} alt="gunung-4" className="rounded-xl object-cover w-full" style={{height:'300px'}} />
+              <img src={mt5} alt="gunung-5" className="rounded-xl object-cover w-full" style={{height:'300px'}} />
             </div>
+
           </div>
         </div>
 
