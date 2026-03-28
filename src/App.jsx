@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroProfile from './HeroProfile';
+import NezaProfile from './NezaProfile';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
         
         <Route path="/hero-manurung" element={<HeroProfile />} />
+        <Route path="/neza-frischa" element={<NezaProfile />} />
       </Routes>
     </BrowserRouter>
   );
