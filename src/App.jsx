@@ -1,5 +1,6 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Rian from './pages/Rian'
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroProfile from './HeroProfile';
 import NezaProfile from './NezaProfile';
 
@@ -8,11 +9,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         
-        <Route path="/" element={<p>Ini halaman utama kelompok. Buka /hero-manurung untuk lihat profilku.</p>} />
+        <Route path="/" element={<p>Ini halaman utama kelompok. Buka localhost:5173/hero-manurung untuk membuka halaman profile Heri Manurung. 
+          Buka localhost:5173/Rian untuk membuka halaman profile rian.</p>} />
 
         
         <Route path="/hero-manurung" element={<HeroProfile />} />
-        <Route path="/neza-frischa" element={<NezaProfile />} />
+        <Route path="/rian" element={<Rian />} />
+        <Route path="/Neza-Frischa" element={<NezaProfile />} />
+
       </Routes>
     </BrowserRouter>
   );
