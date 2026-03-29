@@ -3,6 +3,7 @@ import Rian from './pages/Rian'
 import React from 'react';
 import HeroProfile from './HeroProfile';
 import OktoviaProfile from './OktoviaProfile';
+import NezaProfile from './NezaProfile';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/hero-manurung" element={<HeroProfile />} />
         <Route path="/rian" element={<Rian />} />
         <Route path="/Oktovia-Nababan" element={<OktoviaProfile />} />
+        <Route path="/neza-frischa" element={<NezaProfile />} />
 
       </Routes>
     </BrowserRouter>
