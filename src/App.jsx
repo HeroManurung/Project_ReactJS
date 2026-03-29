@@ -15,7 +15,7 @@ function App() {
         
         <Route path="/hero-manurung" element={<HeroProfile />} />
         <Route path="/rian" element={<Rian />} />
-        <Route path="/Neza-Frischa" element={<NezaProfile />} />
+        <Route path="/neza-frischa" element={<NezaProfile />} />
 
       </Routes>
     </BrowserRouter>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-// import fotoProfil from './assets/fotomu.jpg'; // Hapus komentar ini jika file fotomu sudah ada di assets
-import fotoProfil from './assets/fotoprofil.png'; 
+import fotoProfil from './assets/fotoneza.png'; 
 import imgHima from './assets/logohima.png';
 import imgBem from './assets/logobem.png';
+import filecv from './assets/cv_neza.pdf';
+import cinema from './assets/cinema.jpg';
+import music from './assets/music.jpg';
 // Trik Profesional: Placeholder Logo. 
 // Setelah kamu meng-copy kodenya, silakan ganti '/path_ke_logo_xxx.jpg' di bawah dengan import file gambarmu yang asli.
 const logoHimaInovara = imgHima; // Placeholder Logo HIMA (Blue/Orange)
@@ -187,7 +189,7 @@ const NezaProfile = () => {
             </div>
           </div>
 
-          {/* ================= ORGANIZATIONAL EXPERIENCE (Memenuhi Kolom Kanan) ================= */}
+          {/* ================= ORGANIZATIONAL EXPERIENCE ================= */}
           <div>
             <h3 className="text-3xl font-bold mb-8 text-white">Organizational Experience</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -240,7 +242,7 @@ const NezaProfile = () => {
         </div>
       </div>
 
-      {/* ================= FOOTER / LET'S TALK (Tengah Bawah) ================= */}
+      {/* ================= FOOTER ================= */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mt-10">
         <div className="bg-[#1d1e2e] rounded-3xl p-10 md:p-14 text-center relative overflow-hidden border border-gray-800 hover:border-gray-700 transition-colors shadow-2xl">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#8238b3] to-[#e18af5]"></div>
