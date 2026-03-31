@@ -148,7 +148,7 @@ const Home = () => {
                   }}
                 >
                   {/* Kartu Profil Anggota */}
-                  <div className={`bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[40px] p-8 w-[320px] h-[450px] flex flex-col items-center shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-colors duration-500 ${isCenter ? 'bg-white/50 border-white/80' : ''}`}>
+                  <div className={`bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[40px] p-8 w-[320px] h-[480px] flex flex-col items-center shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-colors duration-500 ${isCenter ? 'bg-white/50 border-white/80' : ''}`}>
                     
                     {/* Lingkaran Foto Profil */}
                     <div className="w-40 h-40 rounded-full bg-white/50 border-4 border-white mb-6 flex-shrink-0 overflow-hidden shadow-inner relative group">
@@ -172,7 +172,7 @@ const Home = () => {
                             ? 'bg-[#657166] text-white hover:bg-[#4a534b] shadow-[0_10px_20px_rgba(101,113,102,0.3)] hover:-translate-y-1 cursor-pointer' 
                             : 'bg-gray-400/20 text-[#657166]/50 cursor-default pointer-events-none'
                         }`}
-                        tabIndex={isCenter ? 0 : -1} // Hindari tab jika tidak di tengah
+                        tabIndex={isCenter ? 0 : -1} 
                       >
                         Lihat Profil
                       </Link>
