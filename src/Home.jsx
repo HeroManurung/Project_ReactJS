@@ -1,29 +1,28 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// Tambahkan ini di bagian atas
+
 import formal from './assets/formal.jpeg'; 
 import rian from './assets/rian.jpeg';
 import fotoneza from './assets/fotoneza.png';
 import okto from './assets/okto.jpeg'; 
 
 const Home = () => {
-  // Data Anggota Kelompok 7 (Sudah disesuaikan dengan route di App.jsx)
   const teamMembers = [
     {
       id: 1,
       name: "Hero Manurung",
       nim: "253140700111014",
       role: "Web Developer",
-      link: "/hero-manurung", // Sesuai dengan Route di App.jsx
+      link: "/hero-manurung",
       image: formal,
       isReady: true 
     },
     {
       id: 2,
       name: "Hilmi Yusrian",
-      nim: "253140700111017", // Ganti dengan NIM Rian yang asli
+      nim: "253140700111017",
       role: "Backend Dev",
-      link: "/rian", // Sesuai dengan Route di App.jsx
+      link: "/rian",
       image: rian,
       isReady: true 
     },
@@ -47,7 +46,6 @@ const Home = () => {
     }
   ];
 
-  // State untuk melacak urutan "karakter" yang sedang di tengah
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -62,21 +60,17 @@ const Home = () => {
     }
   };
 
-  // Fungsi untuk scroll mulus ke bagian carousel anggota
   const scrollToMembers = () => {
     document.getElementById('carousel-anggota').scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    // Background utama menggunakan gradien pastel dari color palette
     <div className="min-h-screen bg-gradient-to-br from-[#DAEBE3] via-[#FDE8D3] to-[#CFD6C4] font-sans overflow-x-hidden relative">
       
-      {/* ===== EFEK LIQUID BACKGROUND BLOBS ===== */}
       <div className="absolute top-0 left-10 w-96 h-96 bg-[#99CDD8] rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-pulse"></div>
       <div className="absolute top-40 right-10 w-96 h-96 bg-[#F3C3B2] rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-pulse" style={{ animationDelay: '2s' }}></div>
       <div className="absolute -bottom-20 left-1/3 w-96 h-96 bg-[#CFD6C4] rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-pulse" style={{ animationDelay: '4s' }}></div>
 
-      {/* ===== SECTION 1: HERO (SELAMAT DATANG) ===== */}
       <section className="min-h-screen flex items-center justify-center p-6 relative z-10">
         <div className="bg-white/30 backdrop-blur-xl border border-white/50 p-12 md:p-20 rounded-[40px] shadow-[0_8px_32px_0_rgba(31,38,135,0.15)] text-center max-w-4xl w-full mx-4 transition-transform duration-500 hover:scale-[1.02]">
           
@@ -98,19 +92,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== SECTION 2: CAROUSEL CHARACTER SELECTION ===== */}
       <section id="carousel-anggota" className="min-h-screen flex flex-col items-center justify-center relative z-10 py-20 overflow-hidden">
         
-        {/* Navigasi ala browser/header */}
         <div className="bg-white/40 backdrop-blur-md border border-white/50 px-8 py-3 rounded-full flex items-center gap-4 shadow-lg mb-12">
           <i className="fa-solid fa-users text-[#657166]"></i>
           <span className="font-bold text-[#657166] tracking-widest">ANGGOTA TIM</span>
         </div>
 
-        {/* Kontainer Utama Carousel 3D */}
         <div className="relative w-full max-w-6xl h-[500px] flex items-center justify-center">
           
-          {/* Tombol Panah Kiri */}
           <button 
             onClick={prevSlide} 
             disabled={currentIndex === 0}
@@ -123,7 +113,6 @@ const Home = () => {
             <i className="fa-solid fa-chevron-left text-xl"></i>
           </button>
 
-          {/* Area Kartu Anggota */}
           <div className="flex justify-center items-center w-full h-full relative perspective-1000">
             {teamMembers.map((member, idx) => {
               const offset = idx - currentIndex;
@@ -147,10 +136,8 @@ const Home = () => {
                     visibility: Math.abs(offset) > 2 ? 'hidden' : 'visible' 
                   }}
                 >
-                  {/* Kartu Profil Anggota */}
                   <div className={`bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[40px] p-8 w-[320px] h-[480px] flex flex-col items-center shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-colors duration-500 ${isCenter ? 'bg-white/50 border-white/80' : ''}`}>
                     
-                    {/* Lingkaran Foto Profil */}
                     <div className="w-40 h-40 rounded-full bg-white/50 border-4 border-white mb-6 flex-shrink-0 overflow-hidden shadow-inner relative group">
                       <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-[#99CDD8]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -163,7 +150,6 @@ const Home = () => {
                       {member.role}
                     </span>
                     
-                    {/* Tombol Lihat Profil (Hanya bisa diklik jika isReady = true dan sedang di tengah) */}
                     {member.isReady ? (
                       <Link 
                         to={member.link} 
@@ -190,7 +176,6 @@ const Home = () => {
             })}
           </div>
 
-          {/* Tombol Panah Kanan */}
           <button 
             onClick={nextSlide} 
             disabled={currentIndex === teamMembers.length - 1}
@@ -205,7 +190,6 @@ const Home = () => {
 
         </div>
         
-        {/* Indikator Titik-titik (Dots) di bawah */}
         <div className="flex gap-3 mt-12">
           {teamMembers.map((_, idx) => (
             <div 
