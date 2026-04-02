@@ -4,17 +4,16 @@ import imgHima from './assets/logohima.png';
 import imgBem from './assets/logobem.png';
 import filecv from './assets/cv_neza.pdf';
 import cinema from './assets/cinema.jpg';
-import music from './assets/music.jpg';
-// Trik Profesional: Placeholder Logo. 
-// Setelah kamu meng-copy kodenya, silakan ganti '/path_ke_logo_xxx.jpg' di bawah dengan import file gambarmu yang asli.
+import music from './assets/music.jpg'; 
+
 const logoHimaInovara = imgHima; // Placeholder Logo HIMA (Blue/Orange)
-const logoBemRuangGemilang = imgBem; // Placeholder Logo BEM (Gold)
+const logoBemRuangGemilang = imgBem; 
 
 
 const NezaProfile = () => {
   const [activeSkillId, setActiveSkillId] = useState(null);
 
-  // Data Skill
+  /* Data Skill */git
   const skillsData = [
     { id: 1, name: 'HTML, CSS & Tailwind', percentage: 75, icon: 'fa-brands fa-html5' },
     { id: 2, name: 'PHP & MySQL', percentage: 70, icon: 'fa-solid fa-code' },
@@ -31,7 +30,7 @@ const NezaProfile = () => {
    
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 grid grid-cols-1 lg:grid-cols-12 gap-16 mb-16">
         
-        {/* ================= KOLOM KIRI (Header, Info & Hobbies) ================= */}
+        {/* (Header, Info & Hobbies) */}
         <div className="lg:col-span-5 flex flex-col relative">
           
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4 tracking-tight">
@@ -62,12 +61,12 @@ const NezaProfile = () => {
             <p><span className="text-white font-medium w-24 inline-block">Kampus</span> : Universitas Brawijaya</p>
           </div>
 
-          {/* ================= HOBBIES ================= */}
+          {/* HOBBIES */}
           <div className="mt-4">
             <h3 className="text-2xl font-bold mb-6 text-white">Hobbies & Interests</h3>
             <div className="grid grid-cols-2 gap-5">
               
-              {/* Hobby 1: Movies / Letterboxd */}
+              {/* Hobby 1: Movies */}
               <a href="https://letterboxd.com/arkchive" target="_blank" rel="noopener noreferrer" className="bg-[#1d1e2e] border border-gray-800 rounded-2xl p-3 flex flex-col group hover:border-[#E50914] transition-all duration-300 shadow-lg cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 relative bg-gray-800">
                   <img src={cinema} alt="Movies" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -86,7 +85,7 @@ const NezaProfile = () => {
                 </div>
               </a>
 
-              {/* Hobby 2: Music / Spotify */}
+              {/* Hobby 2: Music */}
               <a href="https://open.spotify.com/user/rnv18adgpryhvugtznnjc8c60?si=01ff092f5532461a" target="_blank" rel="noopener noreferrer" className="bg-[#1d1e2e] border border-gray-800 rounded-2xl p-3 flex flex-col group hover:border-[#1DB954] transition-all duration-300 shadow-lg cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 relative bg-gray-800">
                   <img src={music} alt="Music" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -109,7 +108,7 @@ const NezaProfile = () => {
           </div>
         </div>
 
-        {/* ================= KOLOM KANAN (About, Edu, Skills, Org Exp) ================= */}
+        {/* (About, Edu, Skills, Org Exp) */}
         <div className="lg:col-span-7 flex flex-col pt-4 lg:pt-8">
           
           {/* Section: About Me */}
@@ -189,7 +188,7 @@ const NezaProfile = () => {
             </div>
           </div>
 
-          {/* ================= ORGANIZATIONAL EXPERIENCE ================= */}
+          {/* ORGANIZATIONAL EXPERIENCE */}
           <div>
             <h3 className="text-3xl font-bold mb-8 text-white">Organizational Experience</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -242,7 +241,7 @@ const NezaProfile = () => {
         </div>
       </div>
 
-      {/* ================= FOOTER ================= */}
+      {/* FOOTER */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mt-10">
         <div className="bg-[#1d1e2e] rounded-3xl p-10 md:p-14 text-center relative overflow-hidden border border-gray-800 hover:border-gray-700 transition-colors shadow-2xl">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#8238b3] to-[#e18af5]"></div>
