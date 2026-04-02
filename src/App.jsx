@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-// 1. IMPORT KOMPONEN HOME KAMU
+// 1. IMPORT KOMPONEN HOME
 import Home from './Home'; 
 
 import Rian from './pages/Rian';
